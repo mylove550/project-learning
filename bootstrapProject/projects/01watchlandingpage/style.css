@@ -1,0 +1,17 @@
+body{background: url(test2.jpg) no-repeat center center fixed;
+background-size:cover;
+
+}
+.hero{color:white;
+font-size:70px;
+text-align: center;
+letter-spacing: -0.05em;
+line-height: 1.2em;
+margin-top: 20%;
+font-family: 'Damion', cursive;
+font-family: 'Damion', cursive;
+font-family: 'Over the Rainbow', cursive;}
+.ima{
+  width: 200px;
+  height: 100px;
+}
