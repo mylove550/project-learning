@@ -1,0 +1,28 @@
+<html>
+<head>
+<style type="text/css">
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+grid-template-rows:repeat(2,50px);
+}
+</style>
+<script>  
+function pageAutorefrash(t){
+setTimeout("location.reload(true);",t);
+}
+pageAutorefrash(5000);
+</script>
+</head>
+<body>
+<div class="container">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+</div>
+<a href="javascript:location.reload(true)">Refresh Page</a>
+</body>
+</html>

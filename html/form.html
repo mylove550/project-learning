@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<script type ="text/javaScript">
+function validate(){
+
+var i=document.getElementsByTagName("input");
+var e=document.getElementsByName("email")[0].value;
+var atindex=e.indexOf("@");
+var dotindex=e.lastIndexOf(".");
+if(i[0].value.length==0)
+{
+alert("please enter your name");
+return false;
+}
+else if(i[2].value.length==0){
+alert("please enter your mobile number");<!--FORM VALIDATION SEE SCREEN SHOT-->
+return false;
+}
+else if(i[4].value.length==0){
+alert("enter your full address");
+return false;
+}
+else if(atindex<1||dotindex>=e.length-2||dotindex<atindex){
+alert("plase enter valid email example example@something.com");
+return false;
+}
+else{
+return true;
+}
+}
+</script>
+</head>
+<form action ="registration.php" method="get" onsubmit=" return validate()">
+name:<input type ="text" name="username" required/>
+<input type="submit"/>
+</br></br></br>
+mobileNo:<input type="number" name="mo" required/>
+<input type="submit"/>
+</br></br></br>
+FULLADRESS:<input type="text" name="text" required/>
+<input type="submit"/>
+</br></br>
+EmailId<input type="text" name="email"  required/>
+<input type="submit" value="register"/>
+</form>
+</body>
+</html>

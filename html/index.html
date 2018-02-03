@@ -1,0 +1,67 @@
+<html>
+<head>
+<style type="text/css">
+.wrapper{display:grid}
+.wrapper{display:grid;
+         color:red;
+          grid-template-columns:100px 100px 100px;
+		   grid-template-rows:50px 50px 50p;}
+		   .item1{grid-column-start:1;
+		           grid-column-end:3;
+				   color:green;}
+	      .item3{ grid-column-start:2;
+		           grid-column-end:4;}
+	      .item4{grid-column-start:2;
+		           grid-column-end:4;}
+</style>
+</head>
+<body>
+<form action="http://www.google.com"method="get">
+Username:
+<input type="text"name="Username"size="15"maxlength="30" /> 
+Password:  <input type="password" name="password" size="15"    maxlength="30" />
+ <p>What did you think of this gig?</p>  <textarea name="comments" cols="20" rows="4">Enter   your comments...</textarea></p>
+ <p>Please select your favorite genre: 
+ <br />   <input type="radio" name="genre" value="rock"checked="checked" /> Rock  
+ <input type="radio" name="genre" value="pop" />Pop   
+ <input type="radio" name="genre" value="jazz" />Jazz </p>
+ <p>Please select your favorite music service(s):  <br />  
+ <input type="checkbox" name="service"     value="itunes" checked="checked" /> iTunes   
+ <input type="checkbox" name="service"     value="lastfm" /> Last.fm   
+ <input type="checkbox" name="service"     value="spotify" /> Spotify 
+ </p>
+ <p>What device do you listen to music on?</p> 
+ <select name="devices">   
+ <option value="ipod">iPod</option>
+ <option value="radio">Radio</option>    
+ <option value="computer">Computer</option>
+ </select>
+ <p>select those<br/>
+ <select name="instruments" size="3"   multiple="multiple"> 
+ <option value="guitar" selected="selected">   Guitar</option> 
+ <option value="drums">Drums</option>  <option value="keyboard"selected="selected">Keyboard</option> 
+ <option value="bass">Bass</option> 
+ </select> </p>
+ <p>Upload your song in MP3 format:</p> 
+ <input type="file" name="user-song" /><br /> <input type="submit" value="Upload" /> 
+  <p>Subscribe to our email list:</p> 
+  <input type="text" name="email" /> 
+  <input type="submit" name="subscribe"   value="Subscribe" />
+  <button><img src="IMG_20171212_135710.JPG" alt="add"   width="10" height="10" /> 
+  Add</button>
+  <input type="hidden" name="bookmark"   value="lyrics" />
+  <label>age:<input type="text" value="text"/> </label>
+  <br/>
+  gender:
+  <input id="female"type="radio" name ="gender" value="f"/>
+  <label for="female">female</label>
+   <input id ="male"type="radio" name ="gender" value="m"/>
+  <label for="male">male</label>
+  </form>
+
+<div class="wrapper"> <div class="item1">1</div>
+                     <div class="item2">2</div>
+                    <div class="item3">3</div><div class="item4">4</div><div class="item5">5</div><div class="item6">6</div>
+					</div>
+</body>
+</html>

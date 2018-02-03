@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>    
+
+
+
+
+function YearsLeft(year) //define method
+{
+this .numYears=year-this .age;
+}
+function People(name,age){
+this .name=name;
+this .age=age;
+this .numYears=0;
+this .YearsLeft=YearsLeft;//adding this method to the constructor function;
+}
+</script>
+</head>
+<body>
+<script>
+var obj1=new People("sujan basak",22);// create instance of a object
+obj1.YearsLeft(65);
+document.write(obj1.numYears);
+
+</script>
+</body>
+</html>

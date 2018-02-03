@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+  body{margin-left: 70px;margin-right: 70px;margin-top: 100px;background: yellow;}
+    #canvas{background-color: green;border:red 5px dashed;};
+  </style>
+<script type="text/javascript">
+  </script>
+</head>
+<body>
+<canvas id="canvas" width="500" height="500"></canvas>
+<script type="text/javascript">
+  var ctx=document.getElementById("canvas").getContext("2d");
+  var g1=ctx.createLinearGradient(0,0,200,0);
+  g1.addColorStop(0,"magenta");
+  g1.addColorStop(1,"green");
+  g1.addColorStop(0.5,"yellow");
+  ctx.fillStyle=g1;
+  ctx.strokeStyle="red";
+  ctx.lineWidth=5;
+  ctx.fillRect(0,0,200,200);
+  ctx.strokeRect(0,0,200,200);
+  </script>
+</body>
+</html>
